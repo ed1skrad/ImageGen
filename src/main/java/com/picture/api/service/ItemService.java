@@ -23,10 +23,6 @@ public class ItemService {
         itemRepository.save(item);
     }
 
-    public Long countItems() {
-        return itemRepository.countItems();
-    }
-
     public Item getRandomItem() {
         List<Item> items = itemRepository.findRandomItems(1);
         if (!items.isEmpty()) {
